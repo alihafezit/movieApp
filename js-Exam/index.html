@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js Exam</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="bg-black">
+
+
+
+
+
+
+
+        <section id="navbar" class="d-flex position-fixed">
+            <div class="nav-extention bg-black w-75 position-relative"
+                id="hidenNav">
+                <div class="nav-choose text-white my-3 position-fixed">
+                    <ul id="menu">
+                        <li class="py-3 list-unstyled"><a
+                                class="text-decoration-none text-light"
+                                href="#movies" onclick="nowPlaying()">Now
+                                Playing</a></li>
+                        <li class="py-3 list-unstyled"><a
+                                class="text-decoration-none text-light"
+                                href="#movies" onclick="popular()">Popular</a></li>
+                        <li class="py-3 list-unstyled"><a
+                                class="text-decoration-none text-light"
+                                href="#movies" onclick="topRated()">Top Rated</a></li>
+                        <li class="py-3 list-unstyled"><a
+                                class="text-decoration-none text-light"
+                                href="#movies" onclick="trending()">Trending</a></li>
+                        <li class="py-3 list-unstyled"><a
+                                class="text-decoration-none text-light"
+                                href="#movies" onclick="upComing()">Upcoming</a></li>
+                        <li class="py-3 list-unstyled"><a
+                                class="text-decoration-none
+                                text-light" href="#contact"> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer text-light d-flex justify-content-center
+                    position-relative">
+                    <div class="social-icons my-5 p-2 position-absolute">
+                        <i class="fab fa-facebook-f m-2"></i>
+                        <i class="fab fa-twitter m-2"></i>
+                        <i class="fas fa-globe m-2"></i>
+                        <br>
+                        <span class="text-muted">Copyright Â© 2019 All Rights
+                            Reserved.</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="bg-white position-relative w-25">
+                <div class="container d-flex flex-column align-items-center
+                    justify-content-between">
+
+                    <div class="img text-center">
+                        <img src="images/logo.png" class="w-100 my-3 p-1">
+                    </div>
+
+                    <div id="navbarOpen" class="icon-nav position-absolute
+                        top-50">
+                        <i class="fa fa-align-justify fs-3" id="open"></i>
+                    </div>
+
+                    <div class="last-icons position-absolute bottom-0">
+                        <i class="fas fa-globe my-2"></i>
+                        <br>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="pt-5" id="movies">
+            <div class="container w-75">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input id="allMovies" class="form-control mb-5
+                            bg-transparent border-0 border-bottom text-center
+                            text-light" placeholder="get movies by word...">
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control mb-5 bg-transparent border-0
+                            border-bottom text-center text-light" id="word"
+                            placeholder="search...">
+                    </div>
+                </div>
+            </div>
+            <section class="container text-center my-1 py-2">
+                <div class="row" id="rowData">
+
+                </div>
+            </section>
+
+        </section>
+        <section id="contact" class="container w-75 mx-auto my-5">
+            <h2 class="text-light my-5">Contact Us...</h2>
+            <div class="row">
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="text-light form-control mb-5
+                            bg-transparent border-0 border-bottom text-center"
+                            id="name" placeholder="Enter Your Name">
+                        <div class="alert alert-danger" id="nameAlert"
+                            role="alert">Your Name Is Not Valid</div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="text-light form-control mb-5
+                            bg-transparent border-0 border-bottom text-center"
+                            type="email" id="email" placeholder="Enter Your
+                            Email">
+                        <div class="alert alert-danger" id="emailAlert"
+                            role="alert">Enter Valid Email</div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="text-light form-control mb-5
+                            bg-transparent border-0 border-bottom text-center"
+                            type="number" id="phone" placeholder="Enter Your
+                            Phone No.">
+                        <div class="alert alert-danger" id="phoneAlert"
+                            role="alert">Enter Valid Phone</div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="text-light form-control mb-5
+                            bg-transparent border-0 border-bottom text-center"
+                            type="number" id="age" placeholder="Enter Your Age">
+                        <div class="alert alert-danger" id="ageAlert"
+                            role="alert">Enter Vaild Age</div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="text-light form-control mb-5
+                            bg-transparent border-0 border-bottom text-center"
+                            id="password" type="password" placeholder="Enter
+                            Your Password">
+                        <div class="alert alert-danger" id="passwordAlert"
+                            role="alert">Enter Valid Password * Minimum 8
+                            characters, at least one letter and one number:*</div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="password" class="text-light form-control
+                            mb-5 bg-transparent border-0 border-bottom
+                            text-center" id="rePassword" placeholder="Confirm
+                            Password">
+                        <div class="alert alert-danger" id="rePasswordAlert"
+                            role="alert">Enter Valid Password</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-outline-danger">Submit</button>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

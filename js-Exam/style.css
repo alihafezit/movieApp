@@ -1,0 +1,68 @@
+#navbar {
+    width: 20% !important;
+    z-index: 99999999999;
+}
+
+nav {
+    height: 100vh;
+    z-index: 999999;
+}
+
+li {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+li:hover {
+    color: red;
+}
+
+a:hover {
+    color: red !important;
+    transition: ease 1s;
+}
+
+i {
+    cursor: pointer;
+}
+
+i :hover {
+    color: red;
+    transition: ease 1s !important;
+}
+
+.social-icons {
+    top: 500px !important;
+}
+
+.social-icons i {
+    transition: all 1s;
+}
+
+.social-icons i:hover {
+    color: red;
+}
+
+/* movies */
+.layer {
+    background-color: rgba(255, 255, 255, 0.548) !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 100% !important;
+    transition: all ease 1s;
+}
+
+.post:hover .layer {
+    position: absolute;
+    top: 0 !important;
+    transition: all ease 1s;
+}
+
+.movie {
+    overflow: hidden;
+}
+
+.alert {
+    display: none;
+}
